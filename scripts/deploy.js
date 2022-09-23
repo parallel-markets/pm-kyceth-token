@@ -5,7 +5,7 @@
 // Runtime Environment's members available in the global scope.
 const { ethers, upgrades } = require('hardhat')
 
-const PID_CONTRACT = '0x9ec6232742b6068ce733645AF16BA277Fa412B0A'
+const PID_CONTRACT = '0x0F2255E8aD232c5740879e3B495EA858D93C3016'
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command

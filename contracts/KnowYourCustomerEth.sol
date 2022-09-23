@@ -41,7 +41,7 @@ contract KnowYourCustomerEth is ERC20Upgradeable {
         return super.transferFrom(from, to, amount);
     }
 
-    function transfer(address to, uint256 amount) public virtual override sanctionsClear(to) returns (bool) {
+    function transfer(address to, uint256 amount) public virtual override sanctionsClear(to) sanctionsClear(msg.sender) returns (bool) {
         return super.transfer(to, amount);
     }
 
